@@ -101,12 +101,6 @@
   border-top: 1px solid lightgray;
 }
 
-.chat_footer > .MuiSvgIcon-root {
-  padding: 10px;
-  color: gray;
-  cursor: pointer;
-}
-
 .chat_footer > form {
   flex: 1;
   display: flex;
@@ -127,10 +121,13 @@
   border-radius: 50%;
   margin-left: 5px;
   font-weight: 700;
+  color: gray;
   font-size: 18px;
 }
 
 .chat_footer > form > button:hover {
-  background-color: rgb(175, 206, 113);
+  color: black;
+  background-color: rgb(200, 233, 243);
   transition: background-color 0.3s ease-out;
+  transition: color 0.3s ease-out;
 }
