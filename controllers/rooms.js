@@ -2,11 +2,10 @@ import Rooms from "../models/roomModel.js";
 import User from "../models/userModel.js";
 
 export const createRoom = (req, res) => {
-  const { name, pic } = req.body;
+  const { name } = req.body;
 
   const data = new Rooms({
     name,
-    pic,
     members: req.user._id,
   });
 

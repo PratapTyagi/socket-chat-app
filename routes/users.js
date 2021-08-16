@@ -11,7 +11,7 @@ import {
 
 router.post("/register", registerUser);
 router.post("/login", loginUser);
-router.get("/", authentication, getAllUsers);
-router.get("/add", authentication, addUser);
+router.post("/", authentication, getAllUsers);
+router.post("/add", authentication, addUser);
 
 export default router;
