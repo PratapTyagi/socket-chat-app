@@ -11,6 +11,7 @@ const Chat = () => {
   const [input, setinput] = useState("");
   const [room, setRoom] = useState({});
   const [messages, setMessages] = useState([]);
+  const { pathname } = useLocation();
 
   // Room info
   useEffect(() => {
@@ -71,7 +72,13 @@ const Chat = () => {
           <p>Last seen at</p>
         </div>
 
-        <button>Add User</button>
+        <Link
+          className="link"
+          to={`${pathname}/allusers`}
+          style={{ textDecoration: "none", color: "none", marginRight: "10px" }}
+        >
+          <button>Add User</button>
+        </Link>
       </div>
 
       <div className="chat_body">
