@@ -53,6 +53,7 @@ const AllUsers = () => {
           <>
             <div className="chat__mid__inner">
               <div className="addUsers__item__left">
+                <img src={user.pic} alt="pic" />
                 <div className="center">
                   <h4>{user.name}</h4>
                   <p>{user.email}</p>

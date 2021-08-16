@@ -39,22 +39,36 @@
   align-items: center;
 }
 
+.addUsers__item__left > img {
+  object-fit: contain;
+  height: 50px;
+  width: 50px;
+}
+
 .addUsers__item__left > .center {
   padding-left: 10px;
+}
+
+.center > h4 {
+  margin: 0;
+}
+
+.center > p {
+  margin: 0;
 }
 
 .chat__mid__inner > button {
   outline: none;
   border: none;
-  border: 2px solid rgb(175, 206, 113);
+  border: 2px solid rgb(133, 181, 195);
   border-radius: 30%;
   background-color: initial;
-  color: rgb(164, 209, 75);
+  color: rgb(133, 181, 195);
   padding: 10px;
   cursor: pointer;
 }
 
 .chat__mid__inner > button:hover {
-  background-color: rgb(175, 206, 113);
+  background-color: rgb(133, 181, 195);
   color: white;
 }
