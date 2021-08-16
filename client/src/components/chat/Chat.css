@@ -93,6 +93,7 @@
 .chat_footer > form {
   flex: 1;
   display: flex;
+  margin: 0 10px;
 }
 
 .chat_footer > form > input {
@@ -105,9 +106,14 @@
 
 .chat_footer > form > button {
   border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-left: 5px;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .chat_footer > form > button:hover {
   background-color: rgb(175, 206, 113);
-  border-radius: 20px;
+  transition: background-color 0.3s ease-out;
 }
