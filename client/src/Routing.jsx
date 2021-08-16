@@ -16,7 +16,7 @@ const Routing = () => {
       <Router>
         <Switch>
           {currentUser ? (
-            <>
+            <div className="app__body">
               <Sidebar />
               <Route exact path="/">
                 <DefaultChat />
@@ -29,7 +29,7 @@ const Routing = () => {
               <Route exact path="/room/:roomId/allusers">
                 <AllUsers />
               </Route>
-            </>
+            </div>
           ) : (
             <>
               <Route exact path="/" component={SignIn} />

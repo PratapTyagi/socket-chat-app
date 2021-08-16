@@ -2,78 +2,36 @@
   display: flex;
   flex-direction: column;
   flex: 0.35;
-}
-
-.sidebar_header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
   border-right: 1px solid lightgray;
 }
 
-.sidebar_headerRight {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-width: 10vw;
+.sidebar_header {
+  padding: 20px;
 }
 
-.sidebar_search {
-  display: flex;
-  align-items: center;
-  background-color: #f6f6f6;
-  height: 30px;
-  padding: 10px;
-}
-
-.sidebar_searchContainer {
-  display: flex;
-  align-items: center;
-  background-color: white;
-  width: 100%;
-  height: 35px;
-  border-radius: 20px;
-}
-
-.sidebar_searchContainer > .MuiSvgIcon-root {
-  color: grey;
-  padding: 10px;
-}
-
-.sidebar_searchContainer > input {
-  border: none;
-  margin-left: 10px;
+.sidebar_header > button {
+  padding: 8px;
   outline: none;
+  cursor: pointer;
+  border: none;
+  border: 2px solid rgb(133, 181, 195);
+  border-radius: 50%;
+  color: rgb(107, 147, 160);
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.sidebar_header > button:hover {
+  background-color: rgb(133, 181, 195);
+  color: whitesmoke;
+  transition: background-color 0.3s ease-out;
 }
 
 .sidebar_chats {
-  flex: 1;
   background-color: white;
   overflow-y: scroll;
 }
 
-/* For hiding scrolbar */
-
 .sidebar_chats::-webkit-scrollbar {
   display: none;
-}
-
-.sidebar_chats {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.icon__form {
-  margin-left: 8px !important;
-  padding-bottom: 22px !important;
-  width: 20px;
-  height: 20px;
-}
-
-#demo-controlled-open-select {
-  padding-right: 0 !important;
-}
-
-h4 {
-  color: rgb(66, 66, 66);
 }

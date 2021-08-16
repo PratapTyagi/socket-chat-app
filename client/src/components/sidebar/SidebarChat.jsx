@@ -32,7 +32,7 @@ const SidebarChat = ({ addNewChat, room }) => {
       </div>
     </div>
   ) : (
-    <Link to={`/rooms/${room._id}`} style={{ textDecoration: "none" }}>
+    <Link to={`/room/${room._id}`} style={{ textDecoration: "none" }}>
       <div className="sidebarChat">
         <img src={room.pic} alt="img" />
         <div className="sidebarChat_right">

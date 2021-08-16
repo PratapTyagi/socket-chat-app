@@ -35,9 +35,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebar_header">
-        <div className="sidebar_headerRight">
-          <button onClick={logOut}>Logout</button>
-        </div>
+        <button onClick={logOut}>Logout</button>
       </div>
       <div className="sidebar_chats">
         <SidebarChat addNewChat />
