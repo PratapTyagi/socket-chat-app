@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
 
 import axios from "axios";
+import io from "socket.io-client";
 
 import "./Chat.css";
 
@@ -12,6 +13,7 @@ const Chat = () => {
   const [room, setRoom] = useState({});
   const [messages, setMessages] = useState([]);
   const { pathname } = useLocation();
+  const [socket, setSocket] = useState(null);
 
   // Room info
   useEffect(() => {
@@ -63,6 +65,19 @@ const Chat = () => {
       .then(({ data }) => setMessages(data))
       .catch((err) => console.log(err));
   }, [roomId, currentUser.token]);
+
+  // Socket
+  useEffect(() => {
+    const sock = io();
+    setSocket(sock);
+    return () => socket.close();
+  }, []);
+
+  useEffect(() => {
+    socket?.on("messages", (data) =>
+      setMessages((prevState) => [...prevState, data])
+    );
+  }, [socket]);
 
   return (
     <div className="chat">
