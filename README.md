@@ -2,7 +2,7 @@
 Demo Chat App
 
 ## `Youtube Link`
-[Help Now](https://youtu.be/wNS29d8GB0s)
+[Socket-Chat-App](https://youtu.be/wNS29d8GB0s)
 
 ## `How to use`
 
